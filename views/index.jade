@@ -1,0 +1,18 @@
+extends layout
+include mixins/nav
+include mixins/breadcrumb
+include mixins/asideNav
+include mixins/main
+
+block content
+	mixin nav()
+	.container(style='margin-top:40px;')
+		mixin breadcrumb()
+		.row
+			mixin asideNav()
+			mixin content()
+
+
+
+		
+				
